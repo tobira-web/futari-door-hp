@@ -1,0 +1,192 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="仲人プロフィール | ふたりの扉"
+  description="ふたりの扉の仲人・IBJ認定カウンセラー オオクラのプロフィールをご紹介します。"
+>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-en">Matchmaker Profile</p>
+      <h1>仲人プロフィール</h1>
+    </div>
+  </section>
+
+  <section class="profile-section">
+    <div class="container profile-inner">
+
+      <div class="profile-photo-area">
+        <div class="profile-photo-placeholder">
+          <span>お写真</span>
+        </div>
+        <div class="profile-title">
+          <p class="profile-name">オオクラ</p>
+          <p class="profile-role">仲人 / IBJ認定カウンセラー</p>
+        </div>
+      </div>
+
+      <div class="profile-text-area">
+        <h2>「あなたの婚活に、<br />真剣に向き合います。」</h2>
+
+        <p>はじめまして。ふたりの扉の仲人を務めております、オオクラです。</p>
+
+        <p>婚活は、人生の大きな一歩です。「誰かに頼んでいいのだろうか」「うまくいくのだろうか」と不安に感じる方もいらっしゃると思います。そのお気持ち、とてもよくわかります。</p>
+
+        <p>ふたりの扉では、お一人おひとりのペースに合わせて、焦らず丁寧にサポートします。出会いのセッティングだけでなく、交際中の悩みや不安も、いつでも気軽に相談してください。</p>
+
+        <p>「結婚したい」という気持ちを大切に、一緒に前に進んでいきましょう。</p>
+
+        <div class="profile-career">
+          <h3>経歴・資格</h3>
+          <ul>
+            <li>IBJ（日本結婚相談所連盟）認定カウンセラー</li>
+            <li>【要確認：経歴・資格など】</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>まずは気軽に<br />お話しましょう。</h2>
+      <p>無料相談は、オンラインでも対応しています。</p>
+      <a href="/contact" class="btn">無料相談を予約する</a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+.page-hero {
+  background: linear-gradient(160deg, var(--color-bg) 60%, var(--color-sub) 100%);
+  padding: 80px 0 64px;
+  text-align: center;
+}
+
+.page-en {
+  font-family: var(--font-en);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.page-hero h1 {
+  font-size: clamp(24px, 3.5vw, 36px);
+}
+
+.profile-section {
+  padding: 80px 0;
+}
+
+.profile-inner {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.profile-photo-placeholder {
+  width: 240px;
+  height: 300px;
+  background: var(--color-sub);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: var(--color-text-sub);
+  margin-bottom: 20px;
+}
+
+.profile-name {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.profile-role {
+  font-size: 13px;
+  color: var(--color-text-sub);
+}
+
+.profile-text-area h2 {
+  font-size: clamp(20px, 2.5vw, 26px);
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.profile-text-area p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--color-text-sub);
+  margin-bottom: 16px;
+}
+
+.profile-career {
+  margin-top: 36px;
+  padding: 28px 32px;
+  background: var(--color-sub);
+  border-radius: 10px;
+}
+
+.profile-career h3 {
+  font-size: 15px;
+  margin-bottom: 14px;
+  color: var(--color-text);
+}
+
+.profile-career ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-career li {
+  font-size: 14px;
+  color: var(--color-text-sub);
+  padding-left: 14px;
+  position: relative;
+}
+
+.profile-career li::before {
+  content: '・';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+.cta-section {
+  background: var(--color-sub);
+  padding: 80px 0;
+}
+
+.cta-inner {
+  text-align: center;
+}
+
+.cta-inner h2 {
+  margin-bottom: 16px;
+}
+
+.cta-inner p {
+  font-size: 14px;
+  color: var(--color-text-sub);
+  margin-bottom: 36px;
+}
+
+@media (max-width: 768px) {
+  .profile-inner {
+    grid-template-columns: 1fr;
+  }
+  .profile-photo-placeholder {
+    width: 100%;
+    height: 240px;
+  }
+}
+</style>

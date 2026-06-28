@@ -1,0 +1,201 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="無料相談・お問い合わせ | ふたりの扉"
+  description="ふたりの扉への無料相談・お問い合わせはこちらから。LINE・電話にて受け付けています。"
+>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-en">Contact</p>
+      <h1>無料相談・<br />お問い合わせ</h1>
+      <p class="page-lead">まずはお気軽にご連絡ください。<br />相談だけでも大歓迎です。</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <div class="contact-card contact-card--main">
+          <p class="contact-method-en">LINE</p>
+          <h2>LINEで相談する</h2>
+          <p class="contact-desc">LINEが一番お返事が早いです。<br />友だち追加後、お気軽にメッセージをどうぞ。</p>
+          <a href="https://line.me/R/ti/p/【要確認：LINE ID】" class="btn contact-btn" target="_blank" rel="noopener noreferrer">
+            LINEで友だち追加
+          </a>
+          <p class="contact-note">※ LINEのIDは【要確認】です。</p>
+        </div>
+
+        <div class="contact-card">
+          <p class="contact-method-en">TEL</p>
+          <h2>電話で相談する</h2>
+          <p class="contact-desc">お電話でのご相談も承っています。<br />担当者が直接対応いたします。</p>
+          <p class="contact-tel">【要確認】</p>
+          <p class="contact-hours">受付時間：【要確認】</p>
+        </div>
+
+      </div>
+
+      <div class="contact-info">
+        <h3>無料相談について</h3>
+        <ul>
+          <li>オンライン（Zoom・LINEビデオ）・来店、どちらにも対応しています。</li>
+          <li>所要時間は約60分です。</li>
+          <li>相談だけで入会をお断りしても、しつこいご連絡はいたしません。</li>
+          <li>ご家族や知人には内容を一切お伝えしませんので、ご安心ください。</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+.page-hero {
+  background: linear-gradient(160deg, var(--color-bg) 60%, var(--color-sub) 100%);
+  padding: 80px 0 64px;
+  text-align: center;
+}
+
+.page-en {
+  font-family: var(--font-en);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.page-hero h1 {
+  font-size: clamp(24px, 3.5vw, 36px);
+  margin-bottom: 20px;
+}
+
+.page-lead {
+  font-size: 15px;
+  color: var(--color-text-sub);
+  line-height: 1.9;
+}
+
+.contact-section {
+  padding: 80px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 48px;
+}
+
+.contact-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-line);
+  border-radius: 16px;
+  padding: 40px 36px;
+}
+
+.contact-card--main {
+  border-color: var(--color-accent);
+  border-width: 2px;
+}
+
+.contact-method-en {
+  font-family: var(--font-en);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  margin-bottom: 10px;
+}
+
+.contact-card h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.contact-desc {
+  font-size: 14px;
+  color: var(--color-text-sub);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.contact-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-note {
+  font-size: 12px;
+  color: var(--color-text-sub);
+  margin-top: 12px;
+  text-align: center;
+}
+
+.contact-tel {
+  font-family: var(--font-en);
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.contact-hours {
+  font-size: 13px;
+  color: var(--color-text-sub);
+}
+
+.contact-info {
+  background: var(--color-sub);
+  border-radius: 12px;
+  padding: 32px 36px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.contact-info h3 {
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.contact-info ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-info li {
+  font-size: 14px;
+  color: var(--color-text-sub);
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.8;
+}
+
+.contact-info li::before {
+  content: '・';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-card {
+    padding: 28px 24px;
+  }
+  .contact-info {
+    padding: 24px 20px;
+  }
+}
+</style>

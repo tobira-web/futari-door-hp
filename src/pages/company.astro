@@ -1,0 +1,143 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="会社概要 | ふたりの扉"
+  description="ふたりの扉の会社概要をご紹介します。"
+>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-en">About Us</p>
+      <h1>会社概要</h1>
+    </div>
+  </section>
+
+  <section class="company-section">
+    <div class="container">
+      <table class="company-table">
+        <tbody>
+          <tr>
+            <th>事業者名</th>
+            <td>ふたりの扉</td>
+          </tr>
+          <tr>
+            <th>代表者</th>
+            <td>オオクラ</td>
+          </tr>
+          <tr>
+            <th>所在地</th>
+            <td>〒【要確認】 群馬県前橋市【要確認】</td>
+          </tr>
+          <tr>
+            <th>電話番号</th>
+            <td>【要確認】</td>
+          </tr>
+          <tr>
+            <th>メールアドレス</th>
+            <td>【要確認】</td>
+          </tr>
+          <tr>
+            <th>営業時間</th>
+            <td>【要確認】</td>
+          </tr>
+          <tr>
+            <th>定休日</th>
+            <td>【要確認】</td>
+          </tr>
+          <tr>
+            <th>加盟団体</th>
+            <td>IBJ（日本結婚相談所連盟）加盟</td>
+          </tr>
+          <tr>
+            <th>事業内容</th>
+            <td>結婚相談所の運営（特定継続的役務提供）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>ご不明な点は<br />お気軽にご相談ください。</h2>
+      <a href="/contact" class="btn">お問い合わせはこちら</a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+.page-hero {
+  background: linear-gradient(160deg, var(--color-bg) 60%, var(--color-sub) 100%);
+  padding: 80px 0 64px;
+  text-align: center;
+}
+
+.page-en {
+  font-family: var(--font-en);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.page-hero h1 {
+  font-size: clamp(24px, 3.5vw, 36px);
+}
+
+.company-section {
+  padding: 80px 0;
+}
+
+.company-table {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.company-table th,
+.company-table td {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--color-line);
+  font-size: 15px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.7;
+}
+
+.company-table th {
+  width: 180px;
+  color: var(--color-text-sub);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.cta-section {
+  background: var(--color-sub);
+  padding: 80px 0;
+}
+
+.cta-inner {
+  text-align: center;
+}
+
+.cta-inner h2 {
+  margin-bottom: 36px;
+}
+
+@media (max-width: 768px) {
+  .company-table th {
+    width: auto;
+    display: block;
+    padding-bottom: 4px;
+    border-bottom: none;
+  }
+  .company-table td {
+    display: block;
+    padding-top: 4px;
+  }
+}
+</style>

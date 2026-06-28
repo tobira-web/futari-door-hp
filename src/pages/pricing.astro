@@ -1,0 +1,235 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="料金プラン | ふたりの扉"
+  description="ふたりの扉の料金プランをご紹介します。明朗な料金体系で、安心して婚活を始めていただけます。"
+>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-en">Pricing</p>
+      <h1>料金プラン</h1>
+      <p class="page-lead">料金はすべて明朗にご案内しています。<br />ご不明な点は無料相談でお気軽にご確認ください。</p>
+    </div>
+  </section>
+
+  <section class="pricing-section">
+    <div class="container">
+
+      <div class="plan-card">
+        <h2 class="plan-name">スタンダードプラン</h2>
+        <div class="fee-list">
+          <div class="fee-row">
+            <span class="fee-label">登録料</span>
+            <span class="fee-value">【要確認】円（税込）</span>
+          </div>
+          <div class="fee-row">
+            <span class="fee-label">月会費</span>
+            <span class="fee-value">【要確認】円／月（税込）</span>
+          </div>
+          <div class="fee-row">
+            <span class="fee-label">お見合い料</span>
+            <span class="fee-value">【要確認】円／回（税込）</span>
+          </div>
+          <div class="fee-row">
+            <span class="fee-label">成婚料</span>
+            <span class="fee-value">【要確認】円（税込）</span>
+          </div>
+        </div>
+        <ul class="plan-includes">
+          <li>担当仲人による個別サポート</li>
+          <li>IBJネットワークでのお相手検索</li>
+          <li>お見合いセッティング</li>
+          <li>交際中のアドバイス</li>
+          <li>オンライン面談対応</li>
+        </ul>
+      </div>
+
+      <div class="note-box">
+        <h3>料金に関するご注意</h3>
+        <ul>
+          <li>料金はすべて税込み表示です。</li>
+          <li>契約期間や詳細な条件は、無料相談時にご説明します。</li>
+          <li>中途解約の場合の返金規定については、契約書にて明記しています。</li>
+          <li>クーリングオフ制度があります（特定継続的役務提供）。詳しくは<a href="/tokusho">特定商取引法の表記</a>をご確認ください。</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>料金の詳細は、無料相談で<br />丁寧にご説明します。</h2>
+      <p>まずはお気軽にご相談ください。</p>
+      <a href="/contact" class="btn">無料相談を予約する</a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+.page-hero {
+  background: linear-gradient(160deg, var(--color-bg) 60%, var(--color-sub) 100%);
+  padding: 80px 0 64px;
+  text-align: center;
+}
+
+.page-en {
+  font-family: var(--font-en);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.page-hero h1 {
+  font-size: clamp(24px, 3.5vw, 36px);
+  margin-bottom: 20px;
+}
+
+.page-lead {
+  font-size: 15px;
+  color: var(--color-text-sub);
+  line-height: 1.9;
+}
+
+.pricing-section {
+  padding: 80px 0;
+}
+
+.plan-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-line);
+  border-radius: 16px;
+  padding: 48px;
+  max-width: 680px;
+  margin: 0 auto 48px;
+}
+
+.plan-name {
+  font-size: 22px;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--color-accent);
+  text-align: left;
+}
+
+.fee-list {
+  margin-bottom: 32px;
+}
+
+.fee-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-line);
+  font-size: 15px;
+}
+
+.fee-label {
+  color: var(--color-text-sub);
+}
+
+.fee-value {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.plan-includes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan-includes li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--color-text-sub);
+}
+
+.plan-includes li::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.note-box {
+  max-width: 680px;
+  margin: 0 auto;
+  background: var(--color-sub);
+  border-radius: 12px;
+  padding: 32px 36px;
+}
+
+.note-box h3 {
+  font-size: 15px;
+  margin-bottom: 16px;
+  color: var(--color-text);
+}
+
+.note-box ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.note-box li {
+  font-size: 13px;
+  color: var(--color-text-sub);
+  line-height: 1.8;
+  padding-left: 14px;
+  position: relative;
+}
+
+.note-box li::before {
+  content: '※';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+.note-box a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.cta-section {
+  background: var(--color-sub);
+  padding: 80px 0;
+}
+
+.cta-inner {
+  text-align: center;
+}
+
+.cta-inner h2 {
+  margin-bottom: 16px;
+}
+
+.cta-inner p {
+  font-size: 14px;
+  color: var(--color-text-sub);
+  margin-bottom: 36px;
+}
+
+@media (max-width: 768px) {
+  .plan-card {
+    padding: 32px 24px;
+  }
+  .note-box {
+    padding: 24px 20px;
+  }
+}
+</style>

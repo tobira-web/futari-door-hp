@@ -1,0 +1,164 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="選ばれる理由 | ふたりの扉"
+  description="ふたりの扉が選ばれる理由をご紹介します。プロの仲人・IBJネットワーク・丁寧なサポートが強みです。"
+>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-en">Why Choose Us</p>
+      <h1>ふたりの扉が<br />選ばれる理由</h1>
+      <p class="page-lead">「ただ出会いを提供する」だけでなく、成婚まで一緒に歩む。<br />それがふたりの扉のスタイルです。</p>
+    </div>
+  </section>
+
+  <section class="reason-section">
+    <div class="container">
+
+      <div class="reason-item">
+        <div class="reason-label">Reason 01</div>
+        <div class="reason-body">
+          <h2>プロの仲人が、あなたの婚活を<br />最初から最後まで担当します</h2>
+          <p>ふたりの扉では、IBJ認定カウンセラーが担当として最初から最後までお一人を担当します。お見合いのセッティング、交際中のアドバイス、プロポーズの準備まで、婚活のすべてのステップを一緒に考えます。</p>
+          <p>「何を話せばいいかわからない」「断られたらどうしよう」という不安も、担当仲人に気軽にご相談いただけます。婚活は、ひとりで頑張らなくていいんです。</p>
+        </div>
+      </div>
+
+      <div class="reason-item reason-item--alt">
+        <div class="reason-label">Reason 02</div>
+        <div class="reason-body">
+          <h2>全国規模のIBJネットワークで<br />真剣な出会いをご紹介</h2>
+          <p>ふたりの扉はIBJ（日本結婚相談所連盟）の加盟相談所です。IBJネットワークを通じて、群馬県内外の会員様との出会いをご提供しています。</p>
+          <p>ネットワークに登録されているのは、みなさん真剣に結婚を考えている方々です。婚活アプリとは違い、同じ気持ちで婚活に向き合っている相手と出会えます。</p>
+        </div>
+      </div>
+
+      <div class="reason-item">
+        <div class="reason-label">Reason 03</div>
+        <div class="reason-body">
+          <h2>焦らず、あなたのペースで<br />進める婚活スタイル</h2>
+          <p>仕事が忙しい方、人見知りの方、婚活が初めてで不安な方。どんな方でも、無理のないペースで進められるようにサポートします。</p>
+          <p>「今月は忙しいので少しペースを落としたい」そんなご希望も大歓迎です。あなたの生活スタイルに合わせて、担当仲人が一緒に調整します。</p>
+        </div>
+      </div>
+
+      <div class="reason-item reason-item--alt">
+        <div class="reason-label">Reason 04</div>
+        <div class="reason-body">
+          <h2>心理学の知見を活かした<br />相手との向き合い方のアドバイス</h2>
+          <p>担当仲人は、心理学の知見をもとにしたコミュニケーションのアドバイスも行います。「どう自分を伝えればいいか」「相手の気持ちをどう受け取ればいいか」を、具体的にお伝えします。</p>
+          <p>出会いの数だけでなく、「関係を深める力」も一緒に育てていきます。</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>まずは無料相談から。<br />気軽にお話しください。</h2>
+      <p>オンライン・来店、どちらにも対応しています。</p>
+      <a href="/contact" class="btn">無料相談を予約する</a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+.page-hero {
+  background: linear-gradient(160deg, var(--color-bg) 60%, var(--color-sub) 100%);
+  padding: 80px 0 64px;
+  text-align: center;
+}
+
+.page-en {
+  font-family: var(--font-en);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.page-hero h1 {
+  font-size: clamp(24px, 3.5vw, 36px);
+  margin-bottom: 20px;
+}
+
+.page-lead {
+  font-size: 15px;
+  color: var(--color-text-sub);
+  line-height: 1.9;
+}
+
+.reason-section {
+  padding: 80px 0;
+}
+
+.reason-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 40px;
+  padding: 56px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.reason-item--alt {
+  background: var(--color-sub);
+  margin: 0 -24px;
+  padding: 56px 24px;
+}
+
+.reason-label {
+  font-family: var(--font-en);
+  font-size: 18px;
+  color: var(--color-accent);
+  font-weight: 400;
+  padding-top: 4px;
+}
+
+.reason-body h2 {
+  font-size: clamp(18px, 2.5vw, 24px);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.reason-body p {
+  font-size: 15px;
+  color: var(--color-text-sub);
+  line-height: 1.9;
+  margin-bottom: 12px;
+}
+
+.cta-section {
+  background: var(--color-sub);
+  padding: 80px 0;
+}
+
+.cta-inner {
+  text-align: center;
+}
+
+.cta-inner h2 {
+  margin-bottom: 16px;
+}
+
+.cta-inner p {
+  font-size: 14px;
+  color: var(--color-text-sub);
+  margin-bottom: 36px;
+}
+
+@media (max-width: 768px) {
+  .reason-item {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .reason-item--alt {
+    margin: 0 -24px;
+    padding: 48px 24px;
+  }
+}
+</style>

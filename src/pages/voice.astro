@@ -1,0 +1,164 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="会員の声 | ふたりの扉"
+  description="ふたりの扉に入会された方々の声をご紹介します。"
+>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-en">Member's Voice</p>
+      <h1>会員の声</h1>
+      <p class="page-lead">ふたりの扉で婚活されたみなさんの声を、<br />プライバシーに配慮した形でご紹介します。</p>
+    </div>
+  </section>
+
+  <section class="voices-section">
+    <div class="container">
+
+      <div class="voice-card">
+        <div class="voice-header">
+          <span class="voice-tag">30代女性・会社員</span>
+        </div>
+        <p class="voice-text">「アプリで何度か試みましたが、なかなか真剣な出会いがなくて…。ふたりの扉に入会してからは、担当の方がいつも寄り添ってくださって、安心して婚活できました。自分のペースで進められたのがよかったです。」</p>
+      </div>
+
+      <div class="voice-card">
+        <div class="voice-header">
+          <span class="voice-tag">40代男性・自営業</span>
+        </div>
+        <p class="voice-text">「仕事が忙しくて婚活の時間がなかなか取れなかったのですが、担当の方が日程調整も全部やってくださるので助かりました。自分に合った方を真剣に探してくれているのが伝わりました。」</p>
+      </div>
+
+      <div class="voice-card">
+        <div class="voice-header">
+          <span class="voice-tag">30代女性・医療職</span>
+        </div>
+        <p class="voice-text">「人見知りで最初はとても不安でしたが、担当の方が話しやすい雰囲気を作ってくださって。お見合いの前には毎回アドバイスをいただけたので、自信を持って臨めました。」</p>
+      </div>
+
+      <div class="voice-card">
+        <div class="voice-header">
+          <span class="voice-tag">30代男性・会社員</span>
+        </div>
+        <p class="voice-text">「結婚相談所に入るのは勇気が要りましたが、無料相談がとても丁寧で安心できました。担当の方がいつも前向きに背中を押してくれたので、最後まで諦めずに続けられました。」</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="note-section">
+    <div class="container">
+      <p class="note">※ 掲載している声は、ご本人の了承を得たうえで、個人が特定されないよう内容を一般化・編集しています。</p>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>あなたの婚活も、<br />一緒に始めませんか。</h2>
+      <p>まずは無料相談でお話を聞かせてください。</p>
+      <a href="/contact" class="btn">無料相談を予約する</a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+.page-hero {
+  background: linear-gradient(160deg, var(--color-bg) 60%, var(--color-sub) 100%);
+  padding: 80px 0 64px;
+  text-align: center;
+}
+
+.page-en {
+  font-family: var(--font-en);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.page-hero h1 {
+  font-size: clamp(24px, 3.5vw, 36px);
+  margin-bottom: 20px;
+}
+
+.page-lead {
+  font-size: 15px;
+  color: var(--color-text-sub);
+  line-height: 1.9;
+}
+
+.voices-section {
+  padding: 80px 0 40px;
+}
+
+.voices-section .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.voice-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  padding: 32px 28px;
+}
+
+.voice-header {
+  margin-bottom: 16px;
+}
+
+.voice-tag {
+  display: inline-block;
+  background: var(--color-sub);
+  color: var(--color-text-sub);
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.voice-text {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--color-text);
+}
+
+.note-section {
+  padding: 0 0 40px;
+}
+
+.note {
+  font-size: 12px;
+  color: var(--color-text-sub);
+  text-align: center;
+}
+
+.cta-section {
+  background: var(--color-sub);
+  padding: 80px 0;
+}
+
+.cta-inner {
+  text-align: center;
+}
+
+.cta-inner h2 {
+  margin-bottom: 16px;
+}
+
+.cta-inner p {
+  font-size: 14px;
+  color: var(--color-text-sub);
+  margin-bottom: 36px;
+}
+
+@media (max-width: 768px) {
+  .voices-section .container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

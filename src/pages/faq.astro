@@ -1,0 +1,190 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqs = [
+  {
+    q: '結婚相談所は初めてです。どんな流れで始めますか？',
+    a: 'まずは無料相談（オンライン可）からスタートします。婚活のご状況やご希望をお聞きし、ふたりの扉でのサポート内容をご説明します。ご納得いただけたら入会手続きへ進みます。わからないことは何でもお気軽にご質問ください。',
+  },
+  {
+    q: '仕事が忙しくて時間が取れないのですが、大丈夫ですか？',
+    a: 'はい、大丈夫です。お見合いの日程調整はすべて担当仲人が行います。週1回のペースで進める方も、月1〜2回のゆっくりペースの方もいらっしゃいます。あなたの生活スタイルに合わせてサポートします。',
+  },
+  {
+    q: '人見知りで、初対面の人と話すのが苦手です。',
+    a: 'ご安心ください。お見合いの前には担当仲人が「どんな話題を振ればいいか」「自分をどう伝えればいいか」を一緒に考えます。緊張しているのは相手も同じです。まずは無料相談で、気軽に話してみてください。',
+  },
+  {
+    q: 'どのくらいの期間で成婚できますか？',
+    a: '個人差がありますので、特定の期間をお約束することはできません。婚活のペースや出会いの状況によって異なります。担当仲人がご状況に合わせて一緒に考えていきますので、焦らず進めていきましょう。',
+  },
+  {
+    q: '群馬県外の方でも入会できますか？',
+    a: 'はい、可能です。無料相談・日々のサポートはオンラインで対応しています。IBJネットワークを通じて、全国の会員様と出会うことができます。',
+  },
+  {
+    q: '途中で退会したい場合はどうなりますか？',
+    a: '中途解約は可能です。返金規定については契約時に書面にて明記しています。また、契約締結から一定期間内はクーリングオフ制度をご利用いただけます。詳しくは<a href="/tokusho">特定商取引法の表記</a>をご確認ください。',
+  },
+  {
+    q: '相談所のことを家族に話していません。秘密にできますか？',
+    a: 'はい、個人情報は厳重に管理しています。ご家族への連絡などは一切行いません。安心してご利用ください。',
+  },
+  {
+    q: '無料相談だけして、入会しないことはできますか？',
+    a: 'もちろんです。無料相談は「まず話を聞いてみたい」という方のためのものです。入会を強くお勧めするようなことはありません。気軽にご相談ください。',
+  },
+];
+---
+
+<Layout
+  title="よくある質問 | ふたりの扉"
+  description="ふたりの扉へのよくあるご質問をまとめました。婚活の不安や疑問を解消してください。"
+>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-en">FAQ</p>
+      <h1>よくある質問</h1>
+      <p class="page-lead">婚活に関するご不安・ご疑問にお答えします。<br />ここにないご質問は、無料相談でお気軽にどうぞ。</p>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <div class="faq-list">
+        {faqs.map((item) => (
+          <div class="faq-item">
+            <div class="faq-q">
+              <span class="faq-icon">Q</span>
+              <p>{item.q}</p>
+            </div>
+            <div class="faq-a">
+              <span class="faq-icon faq-icon--a">A</span>
+              <p set:html={item.a} />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>他にもご質問があれば、<br />無料相談でお聞きします。</h2>
+      <p>オンライン・来店、どちらにも対応しています。</p>
+      <a href="/contact" class="btn">無料相談を予約する</a>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+.page-hero {
+  background: linear-gradient(160deg, var(--color-bg) 60%, var(--color-sub) 100%);
+  padding: 80px 0 64px;
+  text-align: center;
+}
+
+.page-en {
+  font-family: var(--font-en);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.page-hero h1 {
+  font-size: clamp(24px, 3.5vw, 36px);
+  margin-bottom: 20px;
+}
+
+.page-lead {
+  font-size: 15px;
+  color: var(--color-text-sub);
+  line-height: 1.9;
+}
+
+.faq-section {
+  padding: 80px 0;
+}
+
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-line);
+  padding: 32px 0;
+}
+
+.faq-q, .faq-a {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.faq-q {
+  margin-bottom: 16px;
+}
+
+.faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #fff;
+  font-family: var(--font-en);
+  font-size: 13px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.faq-icon--a {
+  background: var(--color-sub);
+  color: var(--color-text);
+}
+
+.faq-q p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.faq-a p {
+  font-size: 14px;
+  color: var(--color-text-sub);
+  line-height: 1.9;
+}
+
+.faq-a a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.cta-section {
+  background: var(--color-sub);
+  padding: 80px 0;
+}
+
+.cta-inner {
+  text-align: center;
+}
+
+.cta-inner h2 {
+  margin-bottom: 16px;
+}
+
+.cta-inner p {
+  font-size: 14px;
+  color: var(--color-text-sub);
+  margin-bottom: 36px;
+}
+</style>

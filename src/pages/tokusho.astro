@@ -1,0 +1,160 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="特定商取引法に基づく表記 | ふたりの扉"
+  description="ふたりの扉の特定商取引法に基づく表記です。"
+>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>特定商取引法に基づく表記</h1>
+      <p class="page-lead">特定継続的役務提供（結婚相手紹介サービス）に関する表記です。</p>
+    </div>
+  </section>
+
+  <section class="tokusho-section">
+    <div class="container">
+      <table class="tokusho-table">
+        <tbody>
+          <tr>
+            <th>事業者名</th>
+            <td>ふたりの扉</td>
+          </tr>
+          <tr>
+            <th>代表者名</th>
+            <td>オオクラ</td>
+          </tr>
+          <tr>
+            <th>所在地</th>
+            <td>〒【要確認】 群馬県前橋市【要確認】</td>
+          </tr>
+          <tr>
+            <th>電話番号</th>
+            <td>【要確認】<br /><span class="note">お問い合わせは原則メール・LINEにて承ります。</span></td>
+          </tr>
+          <tr>
+            <th>メールアドレス</th>
+            <td>【要確認】</td>
+          </tr>
+          <tr>
+            <th>役務の対価（料金）</th>
+            <td>
+              登録料：【要確認】円（税込）<br />
+              月会費：【要確認】円／月（税込）<br />
+              お見合い料：【要確認】円／回（税込）<br />
+              成婚料：【要確認】円（税込）<br />
+              <span class="note">詳細は契約書に明記します。</span>
+            </td>
+          </tr>
+          <tr>
+            <th>役務の提供期間</th>
+            <td>【要確認】ヶ月（契約による）</td>
+          </tr>
+          <tr>
+            <th>お支払い方法</th>
+            <td>【要確認（銀行振込・クレジットカード等）】</td>
+          </tr>
+          <tr>
+            <th>お支払い時期</th>
+            <td>【要確認】</td>
+          </tr>
+          <tr>
+            <th>役務の内容</th>
+            <td>結婚相手の紹介・お見合いセッティング・成婚までのカウンセリングサポート</td>
+          </tr>
+          <tr>
+            <th>クーリングオフ</th>
+            <td>
+              契約書面を受け取った日から8日間は、書面によりクーリングオフ（無条件解約）ができます。<br />
+              クーリングオフはハガキ・書面または電磁的記録（メール等）にてご連絡ください。<br />
+              <span class="note">特定商取引法第48条に基づく権利です。</span>
+            </td>
+          </tr>
+          <tr>
+            <th>中途解約</th>
+            <td>
+              契約期間中でも中途解約が可能です。<br />
+              中途解約時の返還金は、特定商取引法第49条の規定に基づき計算します。<br />
+              詳細は契約書をご確認ください。
+            </td>
+          </tr>
+          <tr>
+            <th>個人情報の取り扱い</th>
+            <td>ご入力いただいた個人情報は、サービス提供の目的のみに使用し、第三者への提供は行いません（法令に基づく場合を除く）。</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+.page-hero {
+  background: var(--color-bg);
+  padding: 64px 0 48px;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.page-hero h1 {
+  font-size: clamp(20px, 2.5vw, 26px);
+  margin-bottom: 12px;
+}
+
+.page-lead {
+  font-size: 14px;
+  color: var(--color-text-sub);
+}
+
+.tokusho-section {
+  padding: 64px 0 80px;
+}
+
+.tokusho-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.tokusho-table th,
+.tokusho-table td {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--color-line);
+  font-size: 14px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.8;
+}
+
+.tokusho-table th {
+  width: 200px;
+  color: var(--color-text-sub);
+  font-weight: 400;
+  white-space: nowrap;
+  background: var(--color-sub);
+}
+
+.note {
+  display: block;
+  font-size: 12px;
+  color: var(--color-text-sub);
+  margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .tokusho-table th {
+    width: auto;
+    display: block;
+    background: var(--color-sub);
+    padding-bottom: 8px;
+    border-bottom: none;
+  }
+  .tokusho-table td {
+    display: block;
+    padding-top: 8px;
+  }
+}
+</style>
